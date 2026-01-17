@@ -1,4 +1,3 @@
-
 "use client"
 
 import { useState, useEffect, Suspense } from "react" // Added Suspense
@@ -121,7 +120,7 @@ function EditRecipeForm() {
 }
 
 // 2. The default export that wraps everything in Suspense
-export default function EditRecipe() {
+export default function Edit() {
     return (
         <Suspense fallback={<div className="flex items-center justify-center min-h-screen">Loading Recipe Data...</div>}>
             <EditRecipeForm />
