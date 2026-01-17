@@ -42,10 +42,10 @@ export default function New(){
           formData.append('prepTime',prepTime)
           if(image) formData.append('image',image)
 
-          const response = await fetch('http://localhost:4000/api/v1/recipe/create-recipe', { // Replace with your Node.js API URL
+          const response = await fetch('https://recipe-api-theta.vercel.app/api/v1/recipe/create-recipe', { // Replace with your Node.js API URL
             method: 'POST',
             headers: {
-              
+            
               'Authorization':`Bearer ${token}`
             },
             body: formData,
